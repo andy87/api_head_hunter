@@ -40,6 +40,7 @@ $headHunterApiRequisites = new HeadHunterApiRequisites( $appName, $contactEmail,
 $apiHeadHunter = ApiHeadHunter( $headHunterApiRequisites, $redisCacheProvider );
 
 // Use `Api`
+$me = $apiHeadHunter->me(); // return array
 ```
 ### Использование Service
 Методы Service возвращают Объекты с данными.
