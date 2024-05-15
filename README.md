@@ -10,22 +10,23 @@ https://miro.com/app/board/uXjVKHFfUB0=/
  - Servcie: Фасад для класса API
 
 ### Использование Api
+Методы Api возвращают массив с данными.
 ```php
-use and_y87/api_head_hunter/ApiHeadHunter;
-use and_y87/api_head_hunter/dto/HeadHunterApiRequisites;
-use and_y87/api_head_hunter/tools/CacheProvider;
+use and_y87\api_head_hunter\ApiHeadHunter;
+use and_y87\api_head_hunter\dto\HeadHunterApiRequisites;
+use and_y87\api_head_hunter\cache\CacheProvider;
 
 // Add `CacheProvider`
 class RedisCacheProvider extends CacheProvider
 {
-    public function getValue(string $key )
+    public function getValue( string $key ): string
     {
-        Yii::$app->redis->get( $key );
+        return (string) Yii::$app->redis->get( $key );
     }
 
-    public function setValue( string $key, string $value )
+    public function setValue( string $key, mixed $value ): bool
     {
-        Yii::$app->redis->set( $key, value );
+        return Yii::$app->redis->set( $key, $value );
     }
 }
 
@@ -39,6 +40,19 @@ $headHunterApiRequisites = new HeadHunterApiRequisites( $appName, $contactEmail,
 $apiHeadHunter = ApiHeadHunter( $headHunterApiRequisites, $redisCacheProvider );
 
 // Use `Api`
+```
+### Использование Service
+Методы Service возвращают Объекты с данными.
+```
+use and_y87\api_head_hunter\service\AvitoService;
+
+//Вводная часть при использовании сервиса аналогична Api
+
+// Create object `Service`
+$headHunterService = new HeadHunterService($apiHeadHunter);
+
+// Use `Service`
+$me = $headHunterService->me(); // return and_y87\api_head_hunter\response\Me();
 ```
 
 ### Исходная документация API `Head Hunter`:
