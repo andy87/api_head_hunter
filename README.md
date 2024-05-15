@@ -1,9 +1,8 @@
 # api Head Hunter
 
-PHP Фасад для API Head Hunter (www.hh.ru)
+## IN PROGRESS
 
-#### Схема работы API
-https://miro.com/app/board/uXjVKHFfUB0=/
+PHP Фасад для API Head Hunter (www.hh.ru)
 
 #### Реализация
  - API: реализация запросов к api сервису `Head Hunter`
@@ -55,6 +54,9 @@ $headHunterService = new HeadHunterService($apiHeadHunter);
 // Use `Service`
 $me = $headHunterService->me(); // return and_y87\api_head_hunter\response\Me();
 ```
+
+#### Схема работы API
+![Схема работы API](https://static.andy87.ru/github/api/apiLogivSchema.png)
 
 ### Исходная документация API `Head Hunter`:
  - https://github.com/hhru/api
