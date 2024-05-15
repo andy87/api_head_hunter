@@ -44,7 +44,7 @@ $me = $apiHeadHunter->me(); // return array
 ```
 ### Использование Service
 Методы Service возвращают Объекты с данными.
-```
+```php
 use and_y87\api_head_hunter\service\AvitoService;
 
 //Вводная часть при использовании сервиса аналогична Api
