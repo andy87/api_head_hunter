@@ -60,7 +60,7 @@ echo $me->name; // Получение значение из объекта че�
 ```
 
 #### Схема работы API
-![Схема работы API](https://static.andy87.ru/github/api/apiLogivSchema.png?v=2)
+![Схема работы API](https://static.andy87.ru/github/api/apiLogivSchema.png?v=3)
 
 ### Исходная документация API `Head Hunter`:
  - https://github.com/hhru/api
