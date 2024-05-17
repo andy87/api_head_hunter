@@ -2,7 +2,12 @@
 
 PHP Фасад для API Head Hunter (www.hh.ru)
 
-![IN PROGRESS](http://www.bc-energy.it/wp-content/uploads/2013/08/work-in-progress.png)
+---
+
+> [!NOTE]
+> ![IN PROGRESS](http://www.bc-energy.it/wp-content/uploads/2013/08/work-in-progress.png)
+
+---
 
 #### Реализация
  - API: реализация запросов к api сервису `Head Hunter`
