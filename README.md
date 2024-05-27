@@ -19,9 +19,9 @@ PHP Фасад для API Head Hunter (www.hh.ru)
 ### Использование Api
 Методы Api возвращают массив с данными.
 ```php
-use and_y87\api_head_hunter\ApiHeadHunter;
-use and_y87\api_head_hunter\dto\HeadHunterApiRequisites;
-use and_y87\api_head_hunter\cache\CacheProvider;
+use and_y87\provider_head_hunter\ApiHeadHunter;
+use and_y87\provider_head_hunter\dto\HeadHunterApiRequisites;
+use and_y87\provider_head_hunter\cache\CacheProvider;
 
 // Создание класса `CacheProvider`
 class RedisCacheProvider extends CacheProvider
@@ -54,7 +54,7 @@ echo $me['name']; // получение значения массива по к�
 ### Использование Service
 Методы Service возвращают объекты(экзмпляры классов) содержащие актуальные для endpoint свойства, согласно документации сервиса.
 ```php
-use and_y87\api_head_hunter\service\AvitoService;
+use and_y87\provider_head_hunter\service\AvitoService;
 
 //Вводная часть при использовании сервиса аналогична Api
 
