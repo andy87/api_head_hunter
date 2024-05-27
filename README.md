@@ -1,4 +1,4 @@
-# api Head Hunter
+# providerHeadHunter
 
 PHP Фасад для API Head Hunter (www.hh.ru)
 
