@@ -10,6 +10,9 @@ PHP Фасад для API Head Hunter (www.hh.ru)
 ---
 
 #### Реализация
+Пакет реализует запросы к API Head Hunter через репозиторий [KnockKnock](https://github.com/andy87/KnockKnock)  
+<p align="center"><a href="https://github.com/andy87/KnockKnock"><img src="https://github.com/andy87/KnockKnock/blob/master/assets/logo/KnockKnockLogo_256.png?raw=true" width=256></a></p>
+
  - API: реализация запросов к api сервису `Head Hunter`
  - Servcie: Фасад для класса API
 
